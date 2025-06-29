@@ -14,9 +14,9 @@ const Project = () => {
 
 
     return (
-        <div className="md:flex md:space-x-40 mx-4 md:justify-center justify-center">
+        <div className="md:flex md:space-x-40  md:justify-center justify-center">
         <div className="mt-10">
-            <Card className = 'w-[400px]'>
+            <Card className = 'md:w-[400px] max-w-fit m-3'>
                 <CardHeader>
                     <CardTitle>Java Classification Dataset Predictor using ML techniques</CardTitle>
                    <CardDescription>(Oct 2024 - Dec 2024)</CardDescription>
@@ -42,7 +42,7 @@ const Project = () => {
             </Card>
         </div>
         <div className="mt-10">
-            <Card className = 'w-[400px]'>
+            <Card className = 'max-w-fit m-3 md:w-[400px]'>
                 <CardHeader>
                     <CardTitle>Project 2</CardTitle>
                    <CardDescription>Java,Python</CardDescription>
@@ -65,7 +65,7 @@ const Project = () => {
             </Card>
         </div>
         <div className="mt-10">
-            <Card className = 'w-[400px]'>
+            <Card className = 'md:w-[400px] max-w-fit m-3'>
                 <CardHeader>
                     <CardTitle>Project 2</CardTitle>
                    <CardDescription>Java,Python</CardDescription>
