@@ -14,7 +14,7 @@ const Project = () => {
 
 
     return (
-        <div className="md:flex md:space-x-40 ml-4  md:justify-center justify-center">
+        <div className="md:flex md:space-x-40 mx-4 md:justify-center justify-center">
         <div className="mt-10">
             <Card className = 'w-[400px]'>
                 <CardHeader>
