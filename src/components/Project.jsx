@@ -14,7 +14,10 @@ const Project = () => {
 
 
     return (
+        <div>
+        <div className="text-center mt-25 text-4xl font-bold"><span className="flex space-x-2 justify-center"><h1>MY</h1><h1 className="text-maroon">PROJECT</h1></span></div>
         <div className="md:flex md:space-x-40  md:justify-center justify-center">
+            
             <div className="mt-10">
                 <Card className='md:w-[400px] max-w-fit m-3'>
                     <CardHeader>
@@ -92,6 +95,7 @@ const Project = () => {
                     </CardFooter>
                 </Card>
             </div>
+        </div>
         </div>
     )
 }

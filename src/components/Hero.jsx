@@ -10,8 +10,10 @@ const Hero = () => {
         <img src={profile_pic} alt="Profile" className=" h-[60vw] max-h-[300px] rounded-full mt-4 shadow-2xl transition-all duration-300 hover:scale-105 " />
         </div>
         <div className="mt-15 justify-center text-7xl flex text-center font-semibold" >Hi, I am Sahmey Raiyan Khan</div>
-        <div className="justify-center flex mt-12">
+        
+        <div className="justify-center flex mt-12 space-x-4">
             <Button className='bg-maroon hover:bg-black px-8 py-6 text-xl rounded-xl' >Contact Me</Button>
+            <Button variant='outline' className='px-8 py-6 text-xl rounded-xl'>My Resume</Button>
         </div>
         </div>
     )

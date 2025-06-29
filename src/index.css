@@ -3,7 +3,7 @@
 
 @custom-variant dark (&:is(.dark *));
 @theme{
-  --color-maroon: #550000;
+  --color-maroon: #a31621;
   --color-aquawhite: #dff2e9; 
 }
 @theme inline {
@@ -118,6 +118,6 @@
     @apply border-border outline-ring/50;
   }
   body {
-    @apply bg-[#fdfcf4] text-foreground;
+    @apply bg-[#fcf7f8] text-foreground;
   }
 }
