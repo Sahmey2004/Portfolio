@@ -1,8 +1,21 @@
 User-agent: *
 Allow: /
 
-# Sitemap
+# Important pages
+Allow: /#about
+Allow: /#projects  
+Allow: /#experience
+Allow: /#contact
+
+# Sitemap location
 Sitemap: https://sahmey.com/sitemap.xml
 
-# Crawl-delay
+# Crawl settings
 Crawl-delay: 1
+
+# Block unnecessary paths
+Disallow: /src/
+Disallow: /node_modules/
+Disallow: /*.json
+Disallow: /package.json
+Disallow: /vite.config.js
