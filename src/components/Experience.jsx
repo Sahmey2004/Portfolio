@@ -41,12 +41,13 @@ const Experience = () => {
     },
     {
       institution: 'Bangladesh International Tutorial',
-      degree: 'Bachelor of Computer Science and Business Analytics',
-      gpa: '3.78/4.0',
+      degree: 'International O Levels & A Levels',
+      gpa: '4.0/4.0',
       highlights: [
-        "Dean's List for 2 consecutive semesters",
-        'Relevant Coursework: Data Structures, Algorithms, Machine Learning, Database Systems',
-        'Active member of Google Developers Group',
+        "President of BIT Model United Nations Club 2023-2024",
+        'Core Organiser of BIT Football Tournament',
+        'Covered 95% of school fees for the entire two years of the International A-Level course; awarded to IGCSE high achievers',
+        
       ],
     },
   ];
