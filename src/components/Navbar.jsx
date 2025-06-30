@@ -47,6 +47,29 @@ const Navbar = () => {
           SRK
         </div>
 
+        {/* Hamburger Icon (Mobile Only) */}
+        <button
+          className="md:hidden flex flex-col justify-center items-center w-10 h-10 rounded hover:bg-maroon/10 transition"
+          aria-label={menuOpen ? 'Close menu' : 'Open menu'}
+          onClick={() => setMenuOpen((prev) => !prev)}
+        >
+          <span
+            className={`block h-0.5 w-6 bg-maroon transition-all duration-300 ${
+              menuOpen ? 'rotate-45 translate-y-2' : ''
+            }`}
+          />
+          <span
+            className={`block h-0.5 w-6 bg-maroon my-1 transition-all duration-300 ${
+              menuOpen ? 'opacity-0' : ''
+            }`}
+          />
+          <span
+            className={`block h-0.5 w-6 bg-maroon transition-all duration-300 ${
+              menuOpen ? '-rotate-45 -translate-y-2' : ''
+            }`}
+          />
+        </button>
+
         {/* Desktop Menu */}
         <div className="hidden md:block">
           <ul className="flex space-x-3 text-maroon md:space-x-6 lg:space-x-8">
@@ -114,5 +137,3 @@ const Navbar = () => {
     </nav>
   );
 };
-
-export default Navbar;
