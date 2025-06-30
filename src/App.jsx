@@ -5,10 +5,12 @@ import Project from "./components/Project"
 import Experience from "./components/Experience"
 import Contact from "./components/Contact"
 import AnimatedBackground from "./components/AnimatedBackground"
+import SEOHead from "./components/SEOHead"
 
 function App() {
   return (
     <div className="relative min-h-screen">
+      <SEOHead />
       <AnimatedBackground />
       <Navbar />
       <Hero />

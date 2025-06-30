@@ -55,6 +55,11 @@ const About = () => {
 
   return (
     <section id="about-section" className="py-20 px-4 relative">
+      {/* SEO-friendly heading structure */}
+      <header className="sr-only">
+        <h1>About Sahmey Raiyan Khan - DePauw University Computer Science Student</h1>
+      </header>
+      
       <div className="max-w-6xl mx-auto">
         <div
           className={`text-center mb-16 transition-all duration-1000 ${
@@ -82,20 +87,20 @@ const About = () => {
               </CardHeader>
               <CardContent className="space-y-4">
                 <p className="text-gray-700 leading-relaxed">
-                  Hi, I’m Sahmey, a Computer Science and Business Analytics
-                  student at DePauw University. I thrive on tackling
+                  Hi, I'm <strong>Sahmey Raiyan Khan</strong>, a <strong>Computer Science and Business Analytics
+                  student at DePauw University</strong>. I thrive on tackling
                   challenges—especially when someone says I will not be able to
-                  do it. My interests span software engineering, full-stack
-                  development, and AI, and I’m especially curious about how
-                  Quantum Computing could revolutionize these fields.
+                  do it. My interests span <strong>software engineering</strong>, <strong>full-stack
+                  development</strong>, and <strong>AI</strong>, and I'm especially curious about how
+                  <strong>Quantum Computing</strong> could revolutionize these fields.
                 </p>
                 <p className="text-gray-700 leading-relaxed">
-                  Currently honing skills in Java, Python, and front-end
-                  development, I’m seeking a Summer 2026 Software Engineering
-                  Internship where I can apply my skills, learn, and contribute
+                  Currently honing skills in <strong>Java</strong>, <strong>Python</strong>, and <strong>front-end
+                  development</strong>, I'm seeking a <strong>Summer 2026 Software Engineering
+                  Internship</strong> where I can apply my skills, learn, and contribute
                   to impactful projects. Besides that, I love connecting with
-                  like-minded people—whether it’s about tech, life, or just
-                  having a great conversation. Let’s connect!
+                  like-minded people—whether it's about tech, life, or just
+                  having a great conversation. Let's connect!
                 </p>
                 <div className="flex flex-wrap gap-2 mt-6">
                   {[
@@ -194,7 +199,6 @@ const About = () => {
             ))}
           </div>
         </div>
-        */
       </div>
     </section>
   );
