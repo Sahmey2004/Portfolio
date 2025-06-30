@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import profile_pic from "../assets/profile_pic.JPG"
 import { Button } from "@/components/ui/button"
+import SocialLinks from "./SocialLinks";
 
 const Hero = () => {
     const [isVisible, setIsVisible] = useState(false);
@@ -17,7 +18,7 @@ const Hero = () => {
     };
 
     return (
-        <div className="min-h-screen flex flex-col justify-center items-center relative pt-20">
+        <div id="home" className="min-h-screen flex flex-col justify-center items-center relative pt-20">
             {/* Profile Image with enhanced animations */}
             <div className={`transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0 scale-100' : 'opacity-0 translate-y-10 scale-95'}`}>
                 <div className="relative group">
@@ -44,8 +45,13 @@ const Hero = () => {
                 </p>
             </div>
 
+            {/* Social Links */}
+            <div className={`mt-8 transition-all duration-1000 delay-600 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+                <SocialLinks className="justify-center" />
+            </div>
+
             {/* Buttons with enhanced styling */}
-            <div className={`flex flex-col sm:flex-row gap-4 mt-12 transition-all duration-1000 delay-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+            <div className={`flex flex-col sm:flex-row gap-4 mt-8 transition-all duration-1000 delay-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
                 <Button 
                     className='bg-maroon hover:bg-black px-8 py-6 text-xl rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105 hover:-translate-y-1'
                     onClick={() => scrollToSection('contact-section')}

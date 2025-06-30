@@ -162,3 +162,34 @@
 .animate-glow {
   animation: glow 2s ease-in-out infinite;
 }
+
+/* Social media hover effects */
+.social-link {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-link:hover {
+  transform: translateY(-4px) scale(1.1);
+  filter: drop-shadow(0 10px 20px rgba(163, 22, 33, 0.3));
+}
+
+/* Pulse animation for important elements */
+@keyframes pulse-soft {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.8; }
+}
+
+.animate-pulse-soft {
+  animation: pulse-soft 2s ease-in-out infinite;
+}
+
+/* Gradient text animation */
+@keyframes gradient-shift {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+
+.animate-gradient {
+  background-size: 200% 200%;
+  animation: gradient-shift 3s ease infinite;
+}

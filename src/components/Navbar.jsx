@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button"
+import SocialLinks from "./SocialLinks";
 
 const Navbar = () => {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -27,6 +28,7 @@ const Navbar = () => {
         { name: 'About', id: 'about-section' },
         { name: 'Projects', id: 'projects-section' },
         { name: 'Experience', id: 'experience-section' },
+        { name: 'Contact', id: 'contact-section' },
     ];
 
     return (
@@ -41,6 +43,11 @@ const Navbar = () => {
                     onClick={() => scrollToSection('home')}
                 >
                     SRK
+                </div>
+                
+                {/* Desktop Social Links */}
+                <div className="hidden lg:block">
+                    <SocialLinks size="small" />
                 </div>
                 
                 {/* Hamburger Icon */}
@@ -59,7 +66,7 @@ const Navbar = () => {
                 
                 {/* Desktop Menu */}
                 <div className="hidden md:block">
-                    <ul className="flex space-x-3 text-maroon md:space-x-10 lg:space-x-12">
+                    <ul className="flex space-x-3 text-maroon md:space-x-6 lg:space-x-8">
                         {navItems.map((item) => (
                             <li key={item.id}>
                                 <div 
@@ -76,9 +83,9 @@ const Navbar = () => {
                 <div className="hidden md:block">
                     <Button 
                         className='bg-maroon hover:bg-black transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl'
-                        onClick={() => scrollToSection('contact-section')}
+                        onClick={() => window.open('https://linkedin.com/in/sahmey-raiyan-khan', '_blank')}
                     >
-                        Contact Me
+                        💼 LinkedIn
                     </Button>
                 </div>
             </div>
@@ -97,12 +104,15 @@ const Navbar = () => {
                                 </div>
                             </li>
                         ))}
+                        <li className="pt-2">
+                            <SocialLinks size="small" className="justify-center" />
+                        </li>
                         <li>
                             <Button 
                                 className='bg-maroon hover:bg-black w-full transition-all duration-300 hover:scale-105'
-                                onClick={() => scrollToSection('contact-section')}
+                                onClick={() => window.open('https://linkedin.com/in/sahmey-raiyan-khan', '_blank')}
                             >
-                                Contact Me
+                                💼 Connect on LinkedIn
                             </Button>
                         </li>
                     </ul>
