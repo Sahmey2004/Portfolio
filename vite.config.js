@@ -17,6 +17,17 @@ export default defineConfig({
     outDir: 'dist',
     assetsDir: 'assets',
     // Copy public files to build output
-    copyPublicDir: true
+    copyPublicDir: true,
+    rollupOptions: {
+      input: {
+        main: path.resolve(__dirname, 'index.html')
+      }
+    }
+  },
+  // Ensure proper MIME types
+  server: {
+    fs: {
+      allow: ['..']
+    }
   }
 })
