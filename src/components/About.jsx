@@ -22,34 +22,34 @@ const About = () => {
   }, []);
 
   const skills = [
-    { name: 'Java' },
-    { name: 'Python' },
-    { name: 'JavaScript' },
-    { name: 'React' },
-    { name: 'Machine Learning' },
-    { name: 'Data Analysis' },
+    { name: 'Java', level: 85, color: 'bg-gradient-to-r from-orange-400 to-orange-600' },
+    { name: 'Python', level: 90, color: 'bg-gradient-to-r from-blue-400 to-blue-600' },
+    { name: 'JavaScript', level: 80, color: 'bg-gradient-to-r from-yellow-400 to-yellow-600' },
+    { name: 'React', level: 75, color: 'bg-gradient-to-r from-cyan-400 to-cyan-600' },
+    { name: 'Machine Learning', level: 70, color: 'bg-gradient-to-r from-purple-400 to-purple-600' },
+    { name: 'Data Analysis', level: 85, color: 'bg-gradient-to-r from-green-400 to-green-600' },
   ];
 
   const interests = [
     {
       icon: '🤖',
       title: 'AI & Machine Learning',
-      desc: '',
+      desc: 'Exploring neural networks and deep learning algorithms',
     },
     {
       icon: '📊',
       title: 'Data Science',
-      desc: '',
+      desc: 'Analyzing data to extract meaningful insights',
     },
     {
       icon: '💻',
       title: 'Full Stack Development',
-      desc: '',
+      desc: 'Building end-to-end web applications',
     },
     {
       icon: '🎯',
       title: 'Problem Solving',
-      desc: '',
+      desc: 'Tackling complex challenges with innovative solutions',
     },
   ];
 
@@ -148,6 +148,7 @@ const About = () => {
                         <span className="font-medium text-gray-800 group-hover:text-maroon transition-colors duration-300">
                           {skill.name}
                         </span>
+                        <span className="text-sm text-gray-600">{skill.level}%</span>
                       </div>
                       <div className="w-full bg-gray-200 rounded-full h-2 overflow-hidden">
                         <div

@@ -191,9 +191,6 @@ const Contact = () => {
                     </a>
                   ))}
                 </div>
-
-                
-                             
               </CardContent>
             </Card>
           </div>
@@ -231,7 +228,7 @@ const Contact = () => {
                   variant="outline"
                   className="border-maroon text-maroon hover:bg-maroon hover:text-white px-8 py-3 text-lg rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
                   onClick={() =>
-                    window.open('mailto:sahmey.khan@example.com', '_blank')
+                    window.open('mailto:sahmeykhan88@gmail.com', '_blank')
                   }
                 >
                   📧 Send Message

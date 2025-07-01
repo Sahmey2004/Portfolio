@@ -32,6 +32,7 @@ const Experience = () => {
     {
       institution: 'Depauw University',
       degree: 'Bachelor of Computer Science and Business Analytics',
+      period: '2024 - 2028',
       gpa: '3.78/4.0',
       highlights: [
         "Dean's List for 2 consecutive semesters",
@@ -42,12 +43,12 @@ const Experience = () => {
     {
       institution: 'Bangladesh International Tutorial',
       degree: 'International O Levels & A Levels',
+      period: '2020 - 2024',
       gpa: '4.0/4.0',
       highlights: [
         "President of BIT Model United Nations Club 2023-2024",
         'Core Organiser of BIT Football Tournament',
         'Covered 95% of school fees for the entire two years of the International A-Level course; awarded to IGCSE high achievers',
-        
       ],
     },
   ];
@@ -285,7 +286,7 @@ const Experience = () => {
                       <p className="text-sm text-gray-600">
                         <span className="font-medium">Issued:</span> {cert.date}
                       </p>
-                      <p className="text-xs text-gray-500">
+                      <p className="text-xs text-gray-500 break-all">
                         <span className="font-medium">ID:</span>{' '}
                         {cert.credentialId}
                       </p>
