@@ -207,11 +207,7 @@ const Contact = () => {
               <h3 className="text-2xl font-bold text-gray-800 mb-4">
                 Ready to Start a Conversation?
               </h3>
-              <p className="text-gray-600 mb-6 max-w-2xl mx-auto">
-                Whether it's about a potential collaboration, job opportunity,
-                or just to discuss the latest in tech, I'm always open to
-                meaningful conversations.
-              </p>
+             
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button
                   className="bg-maroon hover:bg-maroon/90 text-white px-8 py-3 text-lg rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
