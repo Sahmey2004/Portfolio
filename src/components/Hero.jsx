@@ -74,12 +74,6 @@ const Hero = () => {
         >
           Contact Me
         </Button>
-        <Button
-          variant="outline"
-          className="px-8 py-6 text-xl rounded-xl border-2 border-maroon text-maroon hover:bg-maroon hover:text-white shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105 hover:-translate-y-1"
-        >
-          My Resume
-        </Button>
       </div>
       {/* Social Links */}
       <div
