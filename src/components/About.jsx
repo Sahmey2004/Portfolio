@@ -22,12 +22,27 @@ const About = () => {
   }, []);
 
   const skills = [
-    { name: 'Java' },
-    { name: 'Python' },
-    { name: 'JavaScript' },
-    { name: 'React' },
-    { name: 'Machine Learning' },
-    { name: 'Data Analysis' },
+    { name: 'Java', category: 'Programming' },
+    { name: 'Python', category: 'Programming' },
+    { name: 'JavaScript', category: 'Programming' },
+    { name: 'C++', category: 'Programming' },
+    { name: 'HTML/CSS', category: 'Web Development' },
+    { name: 'React', category: 'Web Development' },
+    { name: 'Node.js', category: 'Web Development' },
+    { name: 'Express.js', category: 'Web Development' },
+    { name: 'MySQL', category: 'Database' },
+    { name: 'MongoDB', category: 'Database' },
+    { name: 'Git/GitHub', category: 'Tools' },
+    { name: 'VS Code', category: 'Tools' },
+    { name: 'IntelliJ IDEA', category: 'Tools' },
+    { name: 'Eclipse', category: 'Tools' },
+    { name: 'Machine Learning', category: 'AI/Data' },
+    { name: 'Data Analysis', category: 'AI/Data' },
+    { name: 'Neural Networks', category: 'AI/Data' },
+    { name: 'Linear Regression', category: 'AI/Data' },
+    { name: 'Microsoft Excel', category: 'Analytics' },
+    { name: 'Adobe Photoshop', category: 'Design' },
+    { name: 'Adobe Illustrator', category: 'Design' },
   ];
 
   const interests = [
@@ -135,35 +150,32 @@ const About = () => {
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <div className="space-y-4">
-                  {skills.map((skill, index) => (
-                    <div
-                      key={index}
-                      className="group cursor-pointer"
-                      onMouseEnter={() => setActiveSkill(index)}
-                      onMouseLeave={() => setActiveSkill(null)}
-                    >
-                      <div className="flex justify-between items-center mb-2">
-                        <span className="font-medium text-gray-800 group-hover:text-maroon transition-colors duration-300">
-                          {skill.name}
-                        </span>
-                        
+                <div className="space-y-6">
+                  {/* Group skills by category */}
+                  {['Programming', 'Web Development', 'Database', 'AI/Data', 'Tools', 'Analytics', 'Design'].map((category) => {
+                    const categorySkills = skills.filter(skill => skill.category === category);
+                    if (categorySkills.length === 0) return null;
+                    
+                    return (
+                      <div key={category} className="space-y-3">
+                        <h4 className="text-sm font-bold text-maroon uppercase tracking-wider">
+                          {category}
+                        </h4>
+                        <div className="flex flex-wrap gap-2">
+                          {categorySkills.map((skill, index) => (
+                            <span
+                              key={index}
+                              className="px-3 py-1.5 bg-gray-100 text-gray-700 rounded-full text-sm font-medium hover:bg-maroon hover:text-white transition-all duration-300 cursor-default hover:scale-105"
+                              onMouseEnter={() => setActiveSkill(`${category}-${index}`)}
+                              onMouseLeave={() => setActiveSkill(null)}
+                            >
+                              {skill.name}
+                            </span>
+                          ))}
+                        </div>
                       </div>
-                      <div className="w-full bg-gray-200 rounded-full h-2 overflow-hidden">
-                        <div
-                          className={`h-full ${
-                            skill.color
-                          } rounded-full transition-all duration-1000 ease-out transform ${
-                            activeSkill === index ? 'scale-y-125' : ''
-                          }`}
-                          style={{
-                            width: isVisible ? `${skill.level}%` : '0%',
-                            transitionDelay: `${index * 100}ms`,
-                          }}
-                        ></div>
-                      </div>
-                    </div>
-                  ))}
+                    );
+                  })}
                 </div>
               </CardContent>
             </Card>
