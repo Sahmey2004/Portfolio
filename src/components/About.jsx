@@ -87,20 +87,19 @@ const About = () => {
               </CardHeader>
               <CardContent className="space-y-4">
                 <p className="text-gray-700 leading-relaxed">
-                  Hi, I'm <strong>Sahmey Raiyan Khan</strong>, a <strong>Computer Science and Business Analytics
-                  student at DePauw University</strong>. I thrive on tackling
-                  challenges—especially when someone says I will not be able to
-                  do it. My interests span <strong>software engineering</strong>, <strong>full-stack
-                  development</strong>, and <strong>AI</strong>, and I'm especially curious about how
-                  <strong>Quantum Computing</strong> could revolutionize these fields.
+                  Hey, I'm <strong>Sahmey Raiyan Khan</strong>. Tell me I can't do something, and watch me prove you wrong.
                 </p>
                 <p className="text-gray-700 leading-relaxed">
-                  Currently honing skills in <strong>Java</strong>, <strong>Python</strong>, and <strong>front-end
-                  development</strong>, I'm seeking a <strong>Summer 2026 Software Engineering
-                  Internship</strong> where I can apply my skills, learn, and contribute
-                  to impactful projects. Besides that, I love connecting with
-                  like-minded people—whether it's about tech, life, or just
-                  having a great conversation. Let's connect!
+                  I'm a <strong>Computer Science and Pre-engineering student at DePauw University</strong>. Currently fascinated by how <strong>AI and quantum computing</strong> will flip our world upside down, and I want to be part of making that happen.
+                </p>
+                <p className="text-gray-700 leading-relaxed">
+                  I'm after a <strong>Summer 2026 Software Engineering internship</strong> where I can tackle real problems that matter. I learn fast, ask the right questions, and genuinely love turning complex problems into elegant solutions.
+                </p>
+                <p className="text-gray-700 leading-relaxed">
+                  When I'm not debugging code, you'll find me having random deep conversations about tech, life, or why pizza is technically a sandwich. The best ideas come from unexpected connections, and the best work happens with people who challenge your thinking.
+                </p>
+                <p className="text-gray-700 leading-relaxed font-medium">
+                  Let's build something interesting together.
                 </p>
                 <div className="flex flex-wrap gap-2 mt-6">
                   {[
