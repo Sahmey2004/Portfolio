@@ -188,37 +188,6 @@ const About = () => {
               </CardContent>
             </Card>
           </div>
-        </div>
-        {/* Interests */}
-        <div
-          className={`mt-16 transition-all duration-1000 delay-700 ${
-            isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
-          }`}
-        >
-          <h3 className="text-3xl font-bold text-center mb-8 text-gray-800">
-            What Drives Me
-          </h3>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {interests.map((interest, index) => (
-              <Card
-                key={index}
-                className="bg-white/80 backdrop-blur-sm border-0 shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-105 hover:-translate-y-2 cursor-pointer group"
-              >
-                <CardContent className="p-6 text-center">
-                  <div className="text-4xl mb-4 group-hover:scale-110 transition-transform duration-300">
-                    {interest.icon}
-                  </div>
-                  <h4 className="font-bold text-lg mb-2 text-gray-800 group-hover:text-maroon transition-colors duration-300">
-                    {interest.title}
-                  </h4>
-                  <p className="text-gray-600 text-sm leading-relaxed">
-                    {interest.desc}
-                  </p>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
       </div>
     </section>
   );

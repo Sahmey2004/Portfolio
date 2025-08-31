@@ -11,6 +11,7 @@ import {
 
 const Project = () => {
   const [isVisible, setIsVisible] = useState(false);
+  const [showAllProjects, setShowAllProjects] = useState(false);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -97,6 +98,11 @@ const Project = () => {
     },
   ];
 
+  // Featured projects (first 3)
+  const featuredProjects = projects.slice(0, 3);
+  // Additional projects (rest)
+  const additionalProjects = projects.slice(3);
+
   return (
     <section id="projects-section" className="py-20 px-4 relative">
       <div className="max-w-7xl mx-auto">
@@ -112,8 +118,9 @@ const Project = () => {
           <div className="w-24 h-1 bg-maroon mx-auto rounded-full"></div>
         </div>
 
-        <div className="grid lg:grid-cols-3 xl:grid-cols-5 md:grid-cols-2 gap-8 justify-center">
-          {projects.map((project, index) => (
+        {/* Featured Projects */}
+        <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-8 justify-center">
+          {featuredProjects.map((project, index) => (
             <div
               key={index}
               className={`transition-all duration-1000 ${
@@ -172,6 +179,80 @@ const Project = () => {
             </div>
           ))}
         </div>
+
+        {/* Expand Button */}
+        <div
+          className={`text-center mt-12 transition-all duration-1000 delay-600 ${
+            isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+          }`}
+        >
+          <Button
+            onClick={() => setShowAllProjects(!showAllProjects)}
+            className="bg-maroon hover:bg-black transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl px-8 py-3 text-lg rounded-xl"
+          >
+            {showAllProjects ? 'Show Less Projects' : 'View More Projects'}
+          </Button>
+        </div>
+
+        {/* Additional Projects */}
+        {showAllProjects && (
+          <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-8 justify-center mt-12">
+            {additionalProjects.map((project, index) => (
+              <div
+                key={index + 3}
+                className="transition-all duration-1000 opacity-100 translate-y-0"
+                style={{ transitionDelay: `${index * 200}ms` }}
+              >
+                <Card className="h-full bg-white/80 backdrop-blur-sm border-0 shadow-xl hover:shadow-2xl transition-all duration-500 hover:scale-105 hover:-translate-y-2 group cursor-pointer relative overflow-hidden">
+                  {/* Gradient overlay */}
+                  <div
+                    className={`absolute inset-0 bg-gradient-to-br ${project.gradient} opacity-0 group-hover:opacity-100 transition-opacity duration-500`}
+                  ></div>
+
+                  <CardHeader className="relative z-10">
+                    <CardTitle className="text-lg font-bold leading-tight group-hover:text-maroon transition-colors duration-300">
+                      {project.title}
+                    </CardTitle>
+                    <CardDescription className="text-maroon font-medium">
+                      {project.period}
+                    </CardDescription>
+                  </CardHeader>
+
+                  <CardContent className="relative z-10 flex-grow">
+                    <ul className="list-disc pl-5 space-y-3 text-sm text-gray-700">
+                      {project.description.map((item, idx) => (
+                        <li key={idx} className="leading-relaxed">
+                          {item}
+                        </li>
+                      ))}
+                    </ul>
+
+                    {/* Tech stack */}
+                    <div className="flex flex-wrap gap-2 mt-4">
+                      {project.tech.map((tech, idx) => (
+                        <span
+                          key={idx}
+                          className="px-2 py-1 bg-maroon/10 text-maroon text-xs rounded-full font-medium group-hover:bg-maroon group-hover:text-white transition-all duration-300"
+                        >
+                          {tech}
+                        </span>
+                      ))}
+                    </div>
+                  </CardContent>
+
+                  <CardFooter className="relative z-10">
+                    <Button 
+                      className="w-full bg-maroon hover:bg-black transition-all duration-300 hover:scale-105 shadow-lg"
+                      onClick={() => window.open(project.url, '_blank')}
+                    >
+                      {project.url?.includes('github') ? 'View on GitHub' : 'View Project'}
+                    </Button>
+                  </CardFooter>
+                </Card>
+              </div>
+            ))}
+          </div>
+        )}
       </div>
     </section>
   );
