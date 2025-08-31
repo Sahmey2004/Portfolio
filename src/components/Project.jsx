@@ -90,7 +90,6 @@ const Project = () => {
           <div className="w-24 h-1 bg-maroon mx-auto rounded-full"></div>
         </div>
 
-        <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-8 justify-center">
         <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-8 justify-center">
           {projects.map((project, index) => (
             <div
@@ -150,7 +149,6 @@ const Project = () => {
               </Card>
             </div>
           ))}
-        </div>
         </div>
       </div>
     </section>
