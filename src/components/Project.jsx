@@ -42,15 +42,15 @@ const Project = () => {
       gradient: 'from-lightblue-500/20 to-purple-500/20',
     },
     {
-      title: 'E-Plant Shopping Platform',
-      period: '(Jun 2025 - Jul 2025)',
+      title: 'Homework Tracker — iOS App',
+      period: '(Jul 2025 - Aug 2025)',
       url: 'https://github.com/Sahmey2004',
       description: [
-        'Built and deployed a full-stack e-commerce app using Next.js, React, Tailwind CSS, and Supabase, enabling dynamic product browsing, cart management, and user authentication',
-        'Integrated real-time inventory, admin dashboard, and responsive UI, improving performance with server-side rendering and reducing page load times by 45%',
+        'Built an iOS app to track assignments (add/edit, due dates, course/priority tags); scheduled 2-hour pre-deadline local notifications that auto-reschedule on edits',
+        'Enforced MVVM with Core Data; shipped search/filter and reminders delivering 180+ notifications/month, raising on-time submissions +32% and maintaining 99.3% crash-free sessions with 28 XCTest cases',
       ],
-      tech: ['Next.js', 'React', 'Tailwind CSS', 'Supabase', 'Server-side Rendering'],
-      gradient: 'from-green-500/20 to-emerald-500/20',
+      tech: ['Swift', 'SwiftUI', 'Core Data', 'UserNotifications', 'XCTest'],
+      gradient: 'from-lightblue-500/20 to-purple-500/20',
     },
     {
       title: 'Java-ML-Classifier',
@@ -64,15 +64,15 @@ const Project = () => {
       gradient: 'from-lightblue-500/20 to-purple-500/20',
     },
     {
-      title: 'Homework Tracker — iOS App',
-      period: '(Jul 2025 - Aug 2025)',
+      title: 'E-Plant Shopping Platform',
+      period: '(Jun 2025 - Jul 2025)',
       url: 'https://github.com/Sahmey2004',
       description: [
-        'Built an iOS app to track assignments (add/edit, due dates, course/priority tags); scheduled 2-hour pre-deadline local notifications that auto-reschedule on edits',
-        'Enforced MVVM with Core Data; shipped search/filter and reminders delivering 180+ notifications/month, raising on-time submissions +32% and maintaining 99.3% crash-free sessions with 28 XCTest cases',
+        'Built and deployed a full-stack e-commerce app using Next.js, React, Tailwind CSS, and Supabase, enabling dynamic product browsing, cart management, and user authentication',
+        'Integrated real-time inventory, admin dashboard, and responsive UI, improving performance with server-side rendering and reducing page load times by 45%',
       ],
-      tech: ['Swift', 'SwiftUI', 'Core Data', 'UserNotifications', 'XCTest'],
-      gradient: 'from-lightblue-500/20 to-purple-500/20',
+      tech: ['Next.js', 'React', 'Tailwind CSS', 'Supabase', 'Server-side Rendering'],
+      gradient: 'from-green-500/20 to-emerald-500/20',
     },
     {
       title: 'Sentiment Analyzer',
