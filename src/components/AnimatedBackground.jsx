@@ -43,7 +43,9 @@ const AnimatedBackground = () => {
       draw() {
         ctx.beginPath();
         ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
-        ctx.fillStyle = `rgba(163, 22, 33, ${this.opacity})`;
+        const isDark = document.documentElement.classList.contains('dark');
+        const color = isDark ? '255, 255, 255' : '163, 22, 33';
+        ctx.fillStyle = `rgba(${color}, ${this.opacity})`;
         ctx.fill();
       }
     }
@@ -72,10 +74,12 @@ const AnimatedBackground = () => {
 
           if (distance < connectionDistance) {
             const opacity = (1 - distance / connectionDistance) * 0.2;
+            const isDark = document.documentElement.classList.contains('dark');
+            const color = isDark ? '255, 255, 255' : '163, 22, 33';
             ctx.beginPath();
             ctx.moveTo(particles[i].x, particles[i].y);
             ctx.lineTo(particles[j].x, particles[j].y);
-            ctx.strokeStyle = `rgba(163, 22, 33, ${opacity})`;
+            ctx.strokeStyle = `rgba(${color}, ${opacity})`;
             ctx.lineWidth = 1;
             ctx.stroke();
           }
@@ -97,7 +101,6 @@ const AnimatedBackground = () => {
     <canvas
       ref={canvasRef}
       className="fixed inset-0 -z-10 opacity-30"
-      style={{ background: 'linear-gradient(135deg, #fcf7f8 0%, #f0e6e8 50%, #e8dde0 100%)' }}
     />
   );
 };
