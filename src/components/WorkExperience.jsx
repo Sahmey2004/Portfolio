@@ -29,18 +29,34 @@ const WorkExperience = () => {
 
   const experiences = [
     {
-      company: 'Accomplo',
+      company: 'Bella Auto Repairs',
       position: 'Software Engineering Intern',
-      period: 'June 2024 - August 2024',
+      period: 'May 2025 - Aug 2025',
       type: 'Internship',
-      location: 'Dhaka, Bangladesh',
+      location: 'Chicago, IL',
       achievements: [
-        'Developed and deployed a full-stack web application using React and Node.js, improving client retention by 40%',
-        'Implemented responsive design principles and optimized user experience across multiple devices',
-        'Collaborated with cross-functional teams in an Agile development environment to deliver features on schedule',
+        'Shipped the company\'s first website; tech stack: React, JavaScript, Node.js, MongoDB, REST APIs',
+        'Built Dialogflow chatbot and Repair Progress Tracker (WebSocket); drove +22% bookings in 2 months',
+        'Designed REST APIs for booking/auth/status with real-time WebSockets; added JWT auth and basic CI/CD',
+        'Integrated Google Maps API (Autocomplete, Distance Matrix) for address search and ETA-based store discovery',
       ],
-      technologies: ['React', 'Node.js', 'JavaScript', 'HTML/CSS', 'Git'],
+      technologies: ['React', 'JavaScript', 'Node.js', 'MongoDB', 'REST APIs', 'WebSocket', 'Dialogflow', 'Google Maps API', 'JWT', 'CI/CD'],
       gradient: 'from-blue-500/10 to-purple-500/10',
+    },
+    {
+      company: 'Algoverse',
+      position: 'AI Researcher',
+      period: 'Jan 2025 - May 2025',
+      type: 'Research',
+      location: 'Greencastle, IN',
+      achievements: [
+        'Built audio-guided EQA agents (PyTorch, Habitat-Sim); +27% nav accuracy and +31% task success on 1,000 episodes',
+        'Implemented RGB+audio fusion with distance-weighted attention cutting epoch time 32% and enabling 12 ablation studies',
+        'Collaborated on a shared research codebase through code reviews; standardized configs/seeds for deterministic runs',
+        'Refactored the VLMnav baseline into modular train/eval components; added run scripts and docs for reproducible research',
+      ],
+      technologies: ['PyTorch', 'Habitat-Sim', 'Python', 'Machine Learning', 'Computer Vision', 'Audio Processing', 'Research'],
+      gradient: 'from-green-500/10 to-blue-500/10',
     },
     {
       company: 'DePauw Futbol Club',
@@ -53,7 +69,21 @@ const WorkExperience = () => {
         'Implemented data-driven design optimizations, using audience insights to refine visual content and improve interaction rates',
       ],
       technologies: ['Adobe Photoshop', 'Adobe Illustrator', 'Design', 'Data Analysis'],
-      gradient: 'from-green-500/10 to-blue-500/10',
+      gradient: 'from-pink-500/10 to-orange-500/10',
+    },
+    {
+      company: 'Accomplo',
+      position: 'Software Engineering Intern',
+      period: 'June 2024 - August 2024',
+      type: 'Internship',
+      location: 'Dhaka, Bangladesh',
+      achievements: [
+        'Developed and deployed a full-stack web application using React and Node.js, improving client retention by 40%',
+        'Implemented responsive design principles and optimized user experience across multiple devices',
+        'Collaborated with cross-functional teams in an Agile development environment to deliver features on schedule',
+      ],
+      technologies: ['React', 'Node.js', 'JavaScript', 'HTML/CSS', 'Git'],
+      gradient: 'from-purple-500/10 to-indigo-500/10',
     },
   ];
 
