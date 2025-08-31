@@ -29,17 +29,17 @@ const WorkExperience = () => {
 
   const experiences = [
     {
-      company: 'Bella Auto Repairs',
+      company: 'Accomplo',
       position: 'Software Engineering Intern',
-      period: 'Summer 2025',
+      period: 'June 2024 - August 2024',
       type: 'Internship',
-      location: 'Remote',
+      location: 'Dhaka, Bangladesh',
       achievements: [
-        'Developed and deployed a full-stack web applications using React and Node.js',
-        'Improved client retention by 40% through connecting users online',
-        'Collaborated with cross-functional teams in Agile development environment',
+        'Developed and deployed a full-stack web application using React and Node.js, improving client retention by 40%',
+        'Implemented responsive design principles and optimized user experience across multiple devices',
+        'Collaborated with cross-functional teams in an Agile development environment to deliver features on schedule',
       ],
-      technologies: ['React', 'Node.js', 'JavaScript', 'Full-Stack Development'],
+      technologies: ['React', 'Node.js', 'JavaScript', 'HTML/CSS', 'Git'],
       gradient: 'from-blue-500/10 to-purple-500/10',
     },
     {
