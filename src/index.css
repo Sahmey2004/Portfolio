@@ -1,7 +1,6 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
-@custom-variant dark (&:is(.dark *));
 @theme{
   --color-maroon: #a31621;
   --color-aquawhite: #dff2e9; 
@@ -118,20 +117,14 @@
     @apply border-border outline-ring/50;
   }
   body {
-    @apply bg-background text-foreground transition-colors duration-300;
+    @apply bg-background text-foreground;
   }
   
   html {
     scroll-behavior: smooth;
   }
-  
-  /* Dark mode specific styles */
-  .dark {
-    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 50%, #0f0f0f 100%);
-  }
-  
-  /* Light mode background */
-  :root:not(.dark) body {
+
+  body {
     background: linear-gradient(135deg, #fcf7f8 0%, #f0e6e8 50%, #e8dde0 100%);
   }
 }

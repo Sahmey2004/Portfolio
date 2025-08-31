@@ -43,9 +43,7 @@ const AnimatedBackground = () => {
       draw() {
         ctx.beginPath();
         ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
-        const isDark = document.documentElement.classList.contains('dark');
-        const color = isDark ? '255, 255, 255' : '163, 22, 33';
-        ctx.fillStyle = `rgba(${color}, ${this.opacity})`;
+        ctx.fillStyle = `rgba(163, 22, 33, ${this.opacity})`;
         ctx.fill();
       }
     }
@@ -74,12 +72,10 @@ const AnimatedBackground = () => {
 
           if (distance < connectionDistance) {
             const opacity = (1 - distance / connectionDistance) * 0.2;
-            const isDark = document.documentElement.classList.contains('dark');
-            const color = isDark ? '255, 255, 255' : '163, 22, 33';
             ctx.beginPath();
             ctx.moveTo(particles[i].x, particles[i].y);
             ctx.lineTo(particles[j].x, particles[j].y);
-            ctx.strokeStyle = `rgba(${color}, ${opacity})`;
+            ctx.strokeStyle = `rgba(163, 22, 33, ${opacity})`;
             ctx.lineWidth = 1;
             ctx.stroke();
           }

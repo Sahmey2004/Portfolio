@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import SocialLinks from './SocialLinks';
-import ThemeToggle from './ThemeToggle';
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -88,8 +87,7 @@ const Navbar = () => {
           </ul>
         </div>
 
-        <div className="hidden md:flex items-center gap-3">
-          <ThemeToggle />
+        <div className="hidden md:flex items-center">
           <Button
             className="bg-maroon hover:bg-black transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl"
             onClick={() =>
@@ -120,9 +118,6 @@ const Navbar = () => {
             ))}
             <li className="pt-2">
               <SocialLinks size="small" className="justify-center" />
-            </li>
-            <li className="flex justify-center">
-              <ThemeToggle />
             </li>
             <li>
               <Button
