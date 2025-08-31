@@ -171,7 +171,7 @@ const WorkExperience = () => {
                     {/* Technologies Used */}
                     <div>
                       <h4 className="font-semibold text-gray-800 mb-3 group-hover:text-maroon transition-colors duration-300">
-                        Technologies Used:
+                        {exp.company === 'DePauw University' ? 'Skills:' : 'Technologies Used:'}
                       </h4>
                       <div className="flex flex-wrap gap-2">
                         {exp.technologies.map((tech, idx) => (
