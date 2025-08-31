@@ -41,6 +41,17 @@ const Project = () => {
       gradient: 'from-lightblue-500/20 to-purple-500/20',
     },
     {
+      title: 'E-Plant Shopping Platform',
+      period: '(Jun 2025 - Jul 2025)',
+      url: 'https://github.com/Sahmey2004',
+      description: [
+        'Built and deployed a full-stack e-commerce app using Next.js, React, Tailwind CSS, and Supabase, enabling dynamic product browsing, cart management, and user authentication',
+        'Integrated real-time inventory, admin dashboard, and responsive UI, improving performance with server-side rendering and reducing page load times by 45%',
+      ],
+      tech: ['Next.js', 'React', 'Tailwind CSS', 'Supabase', 'Server-side Rendering'],
+      gradient: 'from-green-500/20 to-emerald-500/20',
+    },
+    {
       title: 'Java-ML-Classifier',
       period: '(Oct 2024 - Dec 2024)',
       url: 'https://github.com/Sahmey2004',
@@ -80,6 +91,7 @@ const Project = () => {
         </div>
 
         <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-8 justify-center">
+        <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-8 justify-center">
           {projects.map((project, index) => (
             <div
               key={index}
