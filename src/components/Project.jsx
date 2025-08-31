@@ -73,6 +73,17 @@ const Project = () => {
       tech: ['Swift', 'SwiftUI', 'Core Data', 'UserNotifications', 'XCTest'],
       gradient: 'from-lightblue-500/20 to-purple-500/20',
     },
+    {
+      title: 'Sentiment Analyzer',
+      period: '(2024)',
+      url: 'https://github.com/Sahmey2004/sentiment-analyzer',
+      description: [
+        'Developed a machine learning-based sentiment analysis tool to classify text as positive, negative, or neutral sentiment',
+        'Implemented natural language processing techniques and trained models to analyze emotional tone in text data with high accuracy',
+      ],
+      tech: ['Python', 'Machine Learning', 'Natural Language Processing', 'Sentiment Analysis'],
+      gradient: 'from-indigo-500/20 to-blue-500/20',
+    },
   ];
 
   return (
@@ -90,7 +101,7 @@ const Project = () => {
           <div className="w-24 h-1 bg-maroon mx-auto rounded-full"></div>
         </div>
 
-        <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-8 justify-center">
+        <div className="grid lg:grid-cols-3 xl:grid-cols-5 md:grid-cols-2 gap-8 justify-center">
           {projects.map((project, index) => (
             <div
               key={index}
