@@ -79,7 +79,6 @@ const WorkExperience = () => {
       location: 'Greencastle, IN',
       achievements: [
         'Guided 18+ first-year students through weekly one-on-one check-ins and group workshops, providing academic and personal support during their transition to college life',
-        'Launched a comprehensive digital resource hub featuring study guides, campus navigation tools, and academic planning resources, streamlining access to essential information',
         'Developed and implemented a buddy system pairing new students with upperclassmen, along with automated reminder systems for important deadlines and events',
         'Drove +27% participation in first-year programming through innovative engagement strategies and personalized outreach initiatives',
         'Collaborated with academic advisors and student services to identify at-risk students and provide targeted intervention support',
