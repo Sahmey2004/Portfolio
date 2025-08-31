@@ -30,36 +30,36 @@ const Project = () => {
 
   const projects = [
     {
-      title: 'Java Classification Dataset Predictor using ML techniques',
+      title: 'Full Stack Personal Accomplishment Tracker',
+      period: '(Jun 2025 - Jul 2025)',
+      url: 'https://accomplo.vercel.app/',
+      description: [
+        'Built Accomplo, a personal accomplishment tracker, using React 18, TypeScript, Supabase, and React Query; applied a weekly lock to prevent distraction and reinforce motivation by 70% through delayed self-reflection',
+        'Designed a secure PostgreSQL schema with RLS, user management, and CRUD operations, ensuring data integrity and privacy through auth flows and constraints',
+      ],
+      tech: ['React 18', 'TypeScript', 'Supabase', 'React Query'],
+      gradient: 'from-lightblue-500/20 to-purple-500/20',
+    },
+    {
+      title: 'Java-ML-Classifier',
       period: '(Oct 2024 - Dec 2024)',
+      url: 'https://github.com/Sahmey2004',
       description: [
-        'Implemented classification technique of supervised learning enhancing real-life dataset prediction accuracy by 96.2%',
-        'Utilised matrices to train & predict and created a method to compare results (actual vs pred) using neural network concepts',
-        'Developed a Dataset Reader class which extracts data using File Reader and creates matrices to train and test',
+        'Developed a logistic regression model from scratch in Java, building custom matrix operations, forward propagation, and gradient descent logic without ML libraries',
+        'Trained on Breast Cancer and Titanic datasets; achieved 91%+ test accuracy, validated with lightweight JUnit checks for gradients and edge cases',
       ],
-      tech: ['Java', 'Machine Learning', 'Neural Networks'],
+      tech: ['Java', 'Machine Learning', 'JUnit', 'Logistic Regression'],
       gradient: 'from-lightblue-500/20 to-purple-500/20',
     },
     {
-      title: 'Excel Housing Construction Forecast',
-      period: '(Dec 2024)',
+      title: 'Homework Tracker — iOS App',
+      period: '(Jul 2025 - Aug 2025)',
+      url: 'https://github.com/Sahmey2004',
       description: [
-        'Applied the PED framework to analyze and organize 60 FRED datasets on new housing construction across 51 states',
-        'Utilised Linear Regression to predict new housing construction licenses which gave valuable insights to housing investors',
-        'Developed dynamic charts and an interactive dashboard to aid prospective homeowners in efficient data interpretation',
+        'Built an iOS app to track assignments (add/edit, due dates, course/priority tags); scheduled 2-hour pre-deadline local notifications that auto-reschedule on edits',
+        'Enforced MVVM with Core Data; shipped search/filter and reminders delivering 180+ notifications/month, raising on-time submissions +32% and maintaining 99.3% crash-free sessions with 28 XCTest cases',
       ],
-      tech: ['Excel', 'Data Analysis', 'Linear Regression'],
-      gradient: 'from-lightblue-500/20 to-purple-500/20',
-    },
-    {
-      title: 'Interactive Portfolio Website',
-      period: '(Jan 2025)',
-      description: [
-        'Built a responsive portfolio website using React and modern web technologies',
-        'Implemented interactive animations and particle systems for enhanced user experience',
-        'Designed with accessibility and performance optimization in mind',
-      ],
-      tech: ['React', 'JavaScript', 'Tailwind CSS'],
+      tech: ['Swift', 'SwiftUI', 'Core Data', 'UserNotifications', 'XCTest'],
       gradient: 'from-lightblue-500/20 to-purple-500/20',
     },
   ];
@@ -128,8 +128,11 @@ const Project = () => {
                 </CardContent>
 
                 <CardFooter className="relative z-10">
-                  <Button className="w-full bg-maroon hover:bg-black transition-all duration-300 hover:scale-105 shadow-lg">
-                    View on GitHub
+                  <Button 
+                    className="w-full bg-maroon hover:bg-black transition-all duration-300 hover:scale-105 shadow-lg"
+                    onClick={() => window.open(project.url, '_blank')}
+                  >
+                    {project.url?.includes('github') ? 'View on GitHub' : 'View Project'}
                   </Button>
                 </CardFooter>
               </Card>
