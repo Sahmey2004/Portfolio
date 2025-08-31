@@ -80,7 +80,6 @@ const WorkExperience = () => {
       achievements: [
         'Guided 18+ first-year students through weekly one-on-one check-ins and group workshops, providing academic and personal support during their transition to college life',
         'Developed and implemented a buddy system pairing new students with upperclassmen, along with automated reminder systems for important deadlines and events',
-        'Drove +27% participation in first-year programming through innovative engagement strategies and personalized outreach initiatives',
         'Collaborated with academic advisors and student services to identify at-risk students and provide targeted intervention support',
         'Facilitated workshops on time management, study strategies, and campus resource utilization, helping students develop essential college success skills',
       ],
