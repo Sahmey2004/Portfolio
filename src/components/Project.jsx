@@ -84,6 +84,17 @@ const Project = () => {
       tech: ['Python', 'Machine Learning', 'Natural Language Processing', 'Sentiment Analysis'],
       gradient: 'from-indigo-500/20 to-blue-500/20',
     },
+    {
+      title: 'Guess the Persona Game',
+      period: '(Sep 2024)',
+      url: 'https://github.com/Sahmey2004/Guess-the-Persona-Game',
+      description: [
+        'Developed an interactive guessing game in Java where players identify personas based on given clues and characteristics',
+        'Implemented game logic with object-oriented programming principles, featuring multiple difficulty levels and scoring system',
+      ],
+      tech: ['Java', 'Object-Oriented Programming', 'Game Development'],
+      gradient: 'from-yellow-500/20 to-orange-500/20',
+    },
   ];
 
   return (
@@ -102,6 +113,7 @@ const Project = () => {
         </div>
 
         <div className="grid lg:grid-cols-3 xl:grid-cols-5 md:grid-cols-2 gap-8 justify-center">
+        <div className="grid lg:grid-cols-3 xl:grid-cols-6 md:grid-cols-2 gap-8 justify-center">
           {projects.map((project, index) => (
             <div
               key={index}
