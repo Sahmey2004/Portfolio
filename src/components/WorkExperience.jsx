@@ -70,9 +70,6 @@ const WorkExperience = () => {
             <span className="text-maroon">EXPERIENCE</span>
           </h2>
           <div className="w-24 h-1 bg-maroon mx-auto rounded-full"></div>
-          <p className="text-xl text-gray-600 mt-6 max-w-2xl mx-auto">
-            Building real-world solutions and gaining hands-on experience in software development and design.
-          </p>
         </div>
 
         <div className="space-y-8">
@@ -168,41 +165,6 @@ const WorkExperience = () => {
         </div>
 
         {/* Call to Action */}
-        <div
-          className={`text-center mt-16 transition-all duration-1000 delay-500 ${
-            isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
-          }`}
-        >
-          <Card className="bg-gradient-to-r from-maroon/5 to-maroon/10 border-maroon/20 shadow-xl">
-            <CardContent className="py-8">
-              <h3 className="text-2xl font-bold text-gray-800 mb-4">
-                Looking for Summer 2026 Opportunities
-              </h3>
-              <p className="text-gray-600 mb-6 max-w-2xl mx-auto">
-                I'm actively seeking Software Engineering internships where I can contribute to meaningful projects 
-                and continue growing my technical skills in a collaborative environment.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <button
-                  className="bg-maroon hover:bg-maroon/90 text-white px-8 py-3 text-lg rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
-                  onClick={() =>
-                    window.open('https://linkedin.com/in/sahmey-raiyan-khan', '_blank')
-                  }
-                >
-                  💼 View LinkedIn Profile
-                </button>
-                <button
-                  className="border-maroon border-2 text-maroon hover:bg-maroon hover:text-white px-8 py-3 text-lg rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
-                  onClick={() =>
-                    window.open('mailto:sahmeykhan88@gmail.com', '_blank')
-                  }
-                >
-                  📧 Discuss Opportunities
-                </button>
-              </div>
-            </CardContent>
-          </Card>
-        </div>
       </div>
     </section>
   );
