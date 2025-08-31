@@ -75,7 +75,7 @@ const Project = () => {
     },
     {
       title: 'Sentiment Analyzer',
-      period: '(2024)',
+      period: '(Jan 2025)',
       url: 'https://github.com/Sahmey2004/sentiment-analyzer',
       description: [
         'Developed a machine learning-based sentiment analysis tool to classify text as positive, negative, or neutral sentiment',
