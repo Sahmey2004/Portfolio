@@ -53,30 +53,6 @@ const Experience = () => {
     },
   ];
 
-  const experience = [
-    {
-      company: 'Bella Auto Repairs',
-      position: 'Software Engineering Intern',
-      period: 'Summer 2025',
-      type: 'Internship',
-      achievements: [
-        'Developed and deployed a full-stack web applications using React and Node.js',
-        'Improved client retention by 40% through connecting users online',
-        'Collaborated with cross-functional teams in Agile development environment',
-      ],
-    },
-    {
-      company: 'Depauw Futbol Club',
-      position: 'Graphics Designer',
-      period: 'September 2024 - Present',
-      type: 'Part-time',
-      achievements: [
-        'Designed 5 visually appealing posters per week, consistently meeting deadlines to enhance engagement',
-        'Implemented data-driven design optimizations, using audience insights to refine visual content and improve interaction rates',
-      ],
-    },
-  ];
-
   const certifications = [
     {
       name: 'Python for Data Science, AI & Development',
@@ -122,8 +98,8 @@ const Experience = () => {
           }`}
         >
           <h2 className="text-5xl font-bold mb-4">
-            <span className="text-gray-800">MY</span>{' '}
-            <span className="text-maroon">JOURNEY</span>
+            <span className="text-gray-800">EDUCATION &</span>{' '}
+            <span className="text-maroon">CERTIFICATIONS</span>
           </h2>
           <div className="w-24 h-1 bg-maroon mx-auto rounded-full"></div>
         </div>
@@ -139,12 +115,6 @@ const Experience = () => {
               id="education"
               label="Education"
               isActive={activeTab === 'education'}
-              onClick={setActiveTab}
-            />
-            <TabButton
-              id="experience"
-              label="Experience"
-              isActive={activeTab === 'experience'}
               onClick={setActiveTab}
             />
             <TabButton
@@ -198,53 +168,6 @@ const Experience = () => {
                         <li key={idx} className="flex items-start">
                           <span className="text-maroon mr-2 mt-1">▸</span>
                           <span className="text-gray-700">{highlight}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </CardContent>
-                </Card>
-              ))}
-            </div>
-          )}
-
-          {/* Experience Tab */}
-          {activeTab === 'experience' && (
-            <div
-              className={`space-y-6 transition-all duration-500 ${
-                isVisible
-                  ? 'opacity-100 translate-x-0'
-                  : 'opacity-0 translate-x-10'
-              }`}
-            >
-              {experience.map((exp, index) => (
-                <Card
-                  key={index}
-                  className="bg-white/80 backdrop-blur-sm border-0 shadow-2xl hover:shadow-3xl transition-all duration-500 hover:scale-105"
-                >
-                  <CardHeader className="pb-4">
-                    <div className="flex justify-between items-start">
-                      <div>
-                        <CardTitle className="text-2xl text-maroon mb-2">
-                          {exp.position}
-                        </CardTitle>
-                        <CardDescription className="text-lg font-semibold text-gray-700">
-                          {exp.company}
-                        </CardDescription>
-                      </div>
-                      <div className="text-right">
-                        <span className="bg-maroon/10 text-maroon px-3 py-1 rounded-full text-sm font-medium">
-                          {exp.period}
-                        </span>
-                        <p className="text-xs text-gray-500 mt-2">{exp.type}</p>
-                      </div>
-                    </div>
-                  </CardHeader>
-                  <CardContent>
-                    <ul className="space-y-2">
-                      {exp.achievements.map((achievement, idx) => (
-                        <li key={idx} className="flex items-start">
-                          <span className="text-maroon mr-2 mt-1">▸</span>
-                          <span className="text-gray-700">{achievement}</span>
                         </li>
                       ))}
                     </ul>
